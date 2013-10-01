@@ -16,7 +16,7 @@ var getAccessCode = function() { // retrieve accessCode from redirected URL afte
 	var charCount = redirectUri.length + "#access_token=".length;
 	return accessUrl.substring(charCount); //start at index at charCount, inclusive; string.substring(from, to)
 }
-var redirectUri = "https://dl.dropboxusercontent.com/u/4806320/goldenGrams/index.html"; // needs to match in my Instagram dev profile
+var redirectUri = "http://wainetam.github.io/goldengrams/"; // needs to match in my Instagram dev profile
 // var redirectUri = "http://wainetam.github.io/"; // needs to match in my Instagram dev profile
 
 var accessCode = getAccessCode();
